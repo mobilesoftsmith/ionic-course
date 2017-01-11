@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Http Service
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-sliding *ngFor="let user of users" (click)="itemClicked($event, user)">
+      <ion-item>
+        {{user.name.first}} {{user.name.last}}
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="danger" (click)="remove(user)"><ion-icon name="trash"></ion-icon>Delete</button>&nbsp;
+        <button ion-button ><ion-icon name="open"></ion-icon>Open</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

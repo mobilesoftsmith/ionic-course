@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>
+    Storage Data: {{name}}<br/>
+    <button ion-button (click) = "showLocalStorage()">Show Local Storage</button> 
+  </p>
+  <hr/>
+  <p>
+    Input name: <ion-input #data type="text" ></ion-input> <br/>
+    <button ion-button (click)="saveDataToSQLite(data.value)">Save Data to SQLite</button><br/>
+    Sqlite Data: 
+    <ion-list>
+      <ion-item *ngFor="let user of sqliteData">
+        {{user.name}}
+      </ion-item>
+    </ion-list>
+    <button ion-button (click) = "showSqliteData()">Show SQLite Data</button>
+  </p>
+</ion-content>
