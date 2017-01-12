@@ -21,4 +21,5 @@ You are welcome to download these samples and slides to learn Ionic development 
 Thansk for reading this far, happy coding!
 
 Lawrence Zhou
+
 www.mobilesoftsmith.com
