@@ -4,7 +4,7 @@ Ionic is a complete open-source SDK for hybrid mobile app development, built on 
 
 This repository stores and shares the slides and samples for my ionic course.
 
-Ionic2Course.pdf: the slides of the course lecture.
+Ionic2Course.pdf: the slides of the Ionic 2 course lecture.
 
 AdvancedUI: demonstrating some advanced UI topics, such as list, slider, custom pipe, custom directive, navigation between pages.
 
