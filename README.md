@@ -18,7 +18,7 @@ SimpleUI: demonstrating some basic UI topics, such as binding, calling functions
 
 You are welcome to download these samples and slides to learn Ionic development and give me some constructive feedback. 
 
-Thansk for reading this far, happy coding!
+Thanks for reading this far, happy coding!
 
 Lawrence Zhou
 
