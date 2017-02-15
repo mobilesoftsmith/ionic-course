@@ -1,22 +1,19 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Simple UI - Home
+      Simple UI
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <!--The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>-->
-  <p>
-    <img [src]="imageUrl"/><br/>
-    Hello, my name is <strong>{{name}}</strong> <br/>
-    Change name here: <br/>
-    <ion-input type="text" [(ngModel)]="name"></ion-input>
-  </p>
+  <img [src]="imageUrl"/><br/>
+  Hello, my name is <strong>{{name}}</strong> <br/>
+  Change name here: <br/>
+  <ion-input type="text" [(ngModel)]="name"></ion-input>
+  Greetings: <br/>
+  <ion-input type="text" [(ngModel)]="greetings"></ion-input>
   <button (click) = "changeName()">Change Name</button><br/>
-  <button (click) = "helloWorld()">Alert</button>
+  <button (click) = "helloWorld()">Alert</button><br/>
+  <button (click)="formDemo()">Form Demo</button><br/>
 </ion-content>
