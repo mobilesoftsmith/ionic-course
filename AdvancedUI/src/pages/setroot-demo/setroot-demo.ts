@@ -26,5 +26,4 @@ export class SetrootDemoPage {
   backToHome(){
     this.navCtrl.setRoot(HomePage);
   }
-
 }

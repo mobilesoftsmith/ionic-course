@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ViewController } from 'ionic-angular';
-// import { CurrencyAnnotation } from '../../pipes/currency-pipe';
 
 /*
   Generated class for the PipeDemo page.
@@ -29,10 +28,14 @@ export class PipeDemoPage {
     if (this.currency != 'cdn'){
       let data = {
         value: "1234"
-      }
+      };
       this.vc.dismiss(data);
     }else{
-      this.navCtrl.pop();
+      let data = {
+        value: "5678"
+      };
+      this.vc.dismiss(data);
+      // this.navCtrl.pop();
     }
   }
 }

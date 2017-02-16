@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Navigation Demo</ion-title>
+    <ion-title>NavigationDemo</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,11 +15,13 @@
 
 <ion-content padding>
 
-<p>
-  return value is: {{ returnedValue }}<br/>
+  <p>
+    <button ion-button (click)="pushDataDemo()">Pass data by push</button><br/>
 
-  <button ion-button (click)="dataBackDemo()">Pass data back</button><br/>
-</p>
-<button ion-button (click)="setrootDemo()">Set root</button><br/>
+    return value is: {{ returnedValue }}<br/>
+
+    <button ion-button (click)="dataBackDemo()">Pass data to and back</button><br/>
+  </p>
+  <button ion-button (click)="setrootDemo()">Set root</button><br/>
 
 </ion-content>

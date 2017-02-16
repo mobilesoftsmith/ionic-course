@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController } from 'ionic-angular';
+
 import { PipeDemoPage } from '../pipe-demo/pipe-demo';
 import { SetrootDemoPage } from '../setroot-demo/setroot-demo';
 
@@ -23,6 +24,13 @@ export class NavigationDemoPage {
     console.log('ionViewDidLoad NavigationDemoPage');
   }
 
+  pushDataDemo(){
+    this.navCtrl.push(PipeDemoPage, {
+      price: '34.56',
+      currency: 'cdn'
+    });
+  }
+
   dataBackDemo(){
     let modelPage = this.modalCtrl.create(PipeDemoPage, {
       price: '56.78',
@@ -30,7 +38,11 @@ export class NavigationDemoPage {
     });
 
     modelPage.onDidDismiss(data => {
-      this.returnedValue = data.value;
+      if(data){
+        this.returnedValue = data.value;
+      }else{
+        this.returnedValue = 'no return data';
+      }
     });
 
     modelPage.present();
@@ -41,4 +53,5 @@ export class NavigationDemoPage {
       data: 'This is data from navigation demo page'
     });
   }
+
 }

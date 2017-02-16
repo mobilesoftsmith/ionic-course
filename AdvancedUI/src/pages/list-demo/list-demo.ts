@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+
 import { ItemDetailsPage } from '../item-details/item-details';
+
 /*
   Generated class for the ListDemo page.
 
@@ -31,6 +33,7 @@ export class ListDemoPage {
     { title: 'item15' },
     { title: 'item16' }
   ];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
@@ -46,4 +49,5 @@ export class ListDemoPage {
       item: item
     });
   }
+
 }

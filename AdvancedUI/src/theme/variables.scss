@@ -31,9 +31,6 @@ $colors: (
   dark:       #222
 );
 
-$text-color: white;
-$background-color: color($colors, primary);
-
 
 // App iOS Variables
 // --------------------------------------------------
@@ -71,7 +68,7 @@ $background-color: color($colors, primary);
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/v2/ionicons/
 
-@import "ionicons";
+@import "ionic.ionicons";
 
 
 // Fonts

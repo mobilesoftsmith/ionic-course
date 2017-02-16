@@ -67,5 +67,4 @@ export class ElasticHeader {
         this.ticking = false;
  
     }
-
 }
