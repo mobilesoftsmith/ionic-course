@@ -1,3 +1,21 @@
 page-home {
 
+    
+
+    .horizontal-center{
+        margin: 0 ;
+        text-align: center;
+    }
+
+    button {
+        background: color($colors, secondary);
+        width: $my-btton-width;
+        // width:70%;
+        // text-align: center;
+    }
 }
+
+
+
+
+

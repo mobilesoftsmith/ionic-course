@@ -22,17 +22,17 @@ export class HomePage {
     this.navCtrl.push(NavigationDemoPage);
   }
 
-  listDemo(){
+  listDemo() {
     this.navCtrl.push(ListDemoPage);
   }
 
   sliderDemo(){
     this.navCtrl.push(SliderDemoPage);
   }
-  
+
   pipeDemo(){
     this.navCtrl.push(PipeDemoPage, {
-      price: '78.90',
+      price: '12.34',
       currency: 'cdn'
     });
   }
@@ -40,4 +40,5 @@ export class HomePage {
   directiveDemo(){
     this.navCtrl.push(DirectiveDemoPage);
   }
+
 }

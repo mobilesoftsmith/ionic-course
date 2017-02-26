@@ -31,6 +31,10 @@ $colors: (
   dark:       #222
 );
 
+$my-btton-width: 70vw;
+$text-color: color($colors, danger);
+$background-color: color($colors, primary);
+$button-md-text-transform: none;
 
 // App iOS Variables
 // --------------------------------------------------
@@ -42,6 +46,7 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
+
 
 
 

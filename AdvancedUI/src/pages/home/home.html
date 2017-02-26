@@ -1,14 +1,17 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
+  <ion-navbar color='primary'>
+    <ion-title >
+      Home
     </ion-title>
+    <ion-buttons end>
+      <button style="width:50pt">Add</button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="horizontal-center" >
   <button ion-button (click)="navigationDemo()">Navigation Between Pages</button><br/>
-  <button ion-button (click)="listDemo()">List Demo</button><br/>
+  <button  (click)="listDemo()">List Demo</button><br/>
   <button ion-button (click)="sliderDemo()">Slider Demo</button><br/>
   <button ion-button (click)="pipeDemo()">Custom Pipe</button><br/>
   <button ion-button (click)="directiveDemo()">Custom Directive</button><br/>
