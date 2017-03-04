@@ -18,7 +18,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, private localStorage: Storage) {
     // saving data into local storage
-    this.localStorage.set('name', 'Lawrence Zhou');
+    // this.localStorage.set('name', 'Lawrence Zhou');
 
     // initialize sqlite database
     this.sqliteData = [];
@@ -80,5 +80,10 @@ export class HomePage {
       console.log('name: ' + data);
       this.name = data;
     });
+  }
+
+  saveToLocalStorage(value) {
+    this.localStorage.set('name', value);
+    alert('value: ' + value + ' has been saved.')
   }
 }

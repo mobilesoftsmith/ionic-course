@@ -9,6 +9,8 @@
 <ion-content padding>
   <p>
     Storage Data: {{name}}<br/>
+    Input name: <ion-input type="text" #name1 ></ion-input> <br/>
+    <button ion-button (click) = "saveToLocalStorage(name1.value)">Save to Local Storage</button> <br/>
     <button ion-button (click) = "showLocalStorage()">Show Local Storage</button> 
   </p>
   <hr/>
